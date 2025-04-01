@@ -4,13 +4,19 @@
 
 Your readme should include the following information. Each student needs to submit all of this information themselves, even when pair programming. 
 
-Group Member Name(s):
+Group Member Name(s): Hayley Ma
 
 Other collaborators you worked with, including TAs (and feel free to give a shoutout to anyone who was particularly helpful):
 
+Vivian Myers
+
 Any references used besides JavaDoc and course materials:
 
+I used AI on some of the parts when debugging to identify the errors and possible solutions.
+
 Reflection on your experience with this assignment:
+
+I found this assignment interesting because it wasn't like some other traditional calculator and we had to deal with operators and numbers in an unusual order. All the while/if/switch cases took longer to write because I am still working to recall my java skills. 
 
 This assignment does lend itself to more visual prototyping, so please feel free to go this route. Are you including slides, pseudocode, comments, or something else?
 
