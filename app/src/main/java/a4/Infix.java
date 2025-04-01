@@ -5,6 +5,12 @@ import java.util.ArrayDeque;
 
 public class Infix {
 
+
+    /**
+     * 
+     * @param tokens represent infix expression, where numbers are represented as doubles and operators are represented as characters
+     * @return evaluated postfix expression
+     */
     public static Double infixToPostfix(ArrayDeque<Object> tokens) {
         ArrayDeque<Character> stack = new ArrayDeque<>(); // stack for operators
         ArrayDeque<Object> queue = new ArrayDeque<>(); // queue for output, holds it in postfix order
@@ -53,9 +59,14 @@ public class Infix {
         System.out.println(queue);
 
         return Postfix.postfix(queue);
-        
-
+    
     }
+
+    /**
+     * Determines precedence of operator
+     * @param operator character
+     * @return integer that shows precedence level
+     */
     private static int precedence(char operator) { // returns int that represents priority of operator
         switch (operator) {
             case '+':
@@ -74,8 +85,11 @@ public class Infix {
         }
 
     }
-
-    public static void main(String[] args) { // for testing, change equations to test different operations
+    
+    /** Main method for testing; change equations to test different operations
+     * @param args
+     */
+    public static void main(String[] args) { 
         String[] equation = {"2*2+5"};
         System.out.println(Infix.infixToPostfix(Tokenizer.readTokens(equation[0])));
     }
